@@ -1,3 +1,5 @@
+# ripped-off from ryan bates https://github.com/ryanb/dotfiles
+
 require 'rake'
 require 'erb'
 
