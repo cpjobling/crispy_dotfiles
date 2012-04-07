@@ -1,4 +1,11 @@
 syntax enable
-set background=light
+" Options suggested bt drbunsen
+" http://www.drbunsen.org/learning-vim-part-1.html
+set transparency=15
+set guioptions=aAce
+set guifont=Monaco:h12.00
+
+" I like solarized. See theory here: http://ethanschoonover.com/solarized
+set background=dark
 colorscheme solarized
 
