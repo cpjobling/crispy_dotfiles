@@ -3,6 +3,8 @@
 echo "Setting up environment on a new host"
 echo "Let's get vim/gvim working with Janus"
 curl -Lo- http://bit.ly/janus-bootstrap | bash
+echo "Install Oh-My-ZSH"
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 echo "installing dot files"
 rake install
 echo "to repeat install later (e.g. after update). run rake install again"
