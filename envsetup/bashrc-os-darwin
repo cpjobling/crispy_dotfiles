@@ -1,7 +1,7 @@
 alias migrate='rake db:migrate && rake db:test:prepare'
 
 source ~/bin/dotfiles/bashrc
-source ~/.git-completion.bash
+source ~/.bash/git-completion.bash
 
 
 export GEM_HOME='/usr/local'
