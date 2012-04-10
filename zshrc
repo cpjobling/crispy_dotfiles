@@ -31,9 +31,6 @@ alias v='mvim --remote-silent'
 export PATH=:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin::/usr/texbin:/usr/X11/bin
 
 
-# load RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
-
 fpath=($HOME/.zsh/func $fpath)
 typeset -U fpath
 
