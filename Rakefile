@@ -1,10 +1,21 @@
-# ripped-off from ryan bates https://github.com/ryanb/dotfiles
+# ripped-off from Ryan Bates (https://github.com/ryanb/dotfiles)
+# and Zach Holman (https://github.com/holman/dotfiles)
+#
+# See also: http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/
+#
 
 require 'rake'
 require 'erb'
 
 desc "install the dot files into user's home directory"
 task :install do
+
+  linkables = Dir.glob('*/**/{.symlink}')
+
+  skip_all = false
+  overwite_all = false
+  backup_all = false
+
   replace_all = false
   Dir['*'].each do |file|
     next if %w[initialize Rakefile README.md LICENSE].include? file
