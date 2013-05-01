@@ -31,3 +31,7 @@ export NODE_PATH="/usr/local/bin/node_modules"
 
 # JRuby
 export JRUBY_OPTIONS="--1.9"
+
+# Virtualenv for Python
+source /usr/local/share/python/virtualenvwrapper.sh
+
