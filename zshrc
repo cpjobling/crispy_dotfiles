@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-export ZSH_THEME="robbyrussell"
+export ZSH_THEME="bira"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -28,10 +28,19 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export EDITOR='mvim -f --nomru -c "au VimLeave * !open -a Terminal"'
 alias v='mvim --remote-silent'
-export PATH=:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin::/usr/texbin:/usr/X11/bin
+export PATH=/usr/texbin:/usr/X11/bin:$PATH
 
 
 fpath=($HOME/.zsh/func $fpath)
 typeset -U fpath
 
 alias latexmk='latexmk -pdf -pvc'
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# BDSM 
+export PATH="${PATH}:/Users/eechris/.sm/bin:/Users/eechris/.sm/pkg/active/bin:/Users/eechris/.sm/pkg/active/sbin"
+
+plugins=(git bundler brew gem eifion)
+
+

@@ -35,3 +35,6 @@ export JRUBY_OPTIONS="--1.9"
 # Virtualenv for Python
 source /usr/local/share/python/virtualenvwrapper.sh
 
+# SM
+export PATH="${PATH}:/Users/eechris/.sm/bin:/Users/eechris/.sm/pkg/active/bin:/Users/eechris/.sm/pkg/active/sbin"
+
