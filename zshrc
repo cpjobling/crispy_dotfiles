@@ -38,6 +38,9 @@ alias latexmk='latexmk -pdf -pvc'
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
+# PYTHON - brew
+PATH=/usr/local/share/python
+
 # BDSM 
 export PATH="${PATH}:/Users/eechris/.sm/bin:/Users/eechris/.sm/pkg/active/bin:/Users/eechris/.sm/pkg/active/sbin"
 
