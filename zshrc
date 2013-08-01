@@ -36,14 +36,17 @@ typeset -U fpath
 
 alias latexmk='latexmk -pdf -pvc'
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-# PYTHON - brew
-PATH=/usr/local/share/python
+export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # BDSM 
 export PATH="${PATH}:/Users/eechris/.sm/bin:/Users/eechris/.sm/pkg/active/bin:/Users/eechris/.sm/pkg/active/sbin"
 
 plugins=(git bundler brew gem eifion)
 
+
+
+# recommended by brew doctor
+export PATH='/usr/local/bin:/Users/eechris/perl5/perlbrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/usr/local/heroku/bin:/Users/eechris/.rvm/gems/ruby-2.0.0-p0/bin:/Users/eechris/.rvm/gems/ruby-2.0.0-p0@global/bin:/Users/eechris/.rvm/rubies/ruby-2.0.0-p0/bin:/Users/eechris/.rvm/bin:/usr/X11/bin:/Users/eechris/.sm/bin:/Users/eechris/.sm/pkg/active/bin:/Users/eechris/.sm/pkg/active/sbin'
+# eval "$(rbenv init -)"
+# DO NOT EDIT BELOW THIS LINE
 

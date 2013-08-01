@@ -31,3 +31,5 @@ export GOOS=darwin
 # Finished adapting your PATH environment variable for use with MacPorts.
 
 
+
+export PATH=$PATH:/Applications/acquia-drupal/drush
