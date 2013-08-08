@@ -37,6 +37,3 @@ source /usr/local/share/python/virtualenvwrapper.sh
 
 # SM
 export PATH="${PATH}:/Users/eechris/.sm/bin:/Users/eechris/.sm/pkg/active/bin:/Users/eechris/.sm/pkg/active/sbin"
-
-
-export PATH=$PATH:/Applications/acquia-drupal/drush

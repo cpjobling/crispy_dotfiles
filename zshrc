@@ -28,6 +28,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export EDITOR='mvim -f --nomru -c "au VimLeave * !open -a Terminal"'
 alias v='mvim --remote-silent'
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 export PATH=/usr/texbin:/usr/X11/bin:$PATH
 
 
@@ -46,7 +47,6 @@ plugins=(git bundler brew gem eifion)
 
 
 # recommended by brew doctor
-export PATH='/usr/local/bin:/Users/eechris/perl5/perlbrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/usr/local/heroku/bin:/Users/eechris/.rvm/gems/ruby-2.0.0-p0/bin:/Users/eechris/.rvm/gems/ruby-2.0.0-p0@global/bin:/Users/eechris/.rvm/rubies/ruby-2.0.0-p0/bin:/Users/eechris/.rvm/bin:/usr/X11/bin:/Users/eechris/.sm/bin:/Users/eechris/.sm/pkg/active/bin:/Users/eechris/.sm/pkg/active/sbin'
 # eval "$(rbenv init -)"
 # DO NOT EDIT BELOW THIS LINE
 
