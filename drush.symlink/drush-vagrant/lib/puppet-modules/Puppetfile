@@ -1,0 +1,6 @@
+mod 'drush',
+  :git => 'http://git.drupal.org/project/puppet-drush.git'
+
+mod 'apt',
+  :git => 'git://git.koumbit.net/puppet-apt.git'
+

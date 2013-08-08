@@ -1,0 +1,15 @@
+# This file is brought to you by puppet
+
+# basic <%= lsbdistcodename %>
+deb http://archive.debian.org/debian-archive/debian/ lenny main contrib non-free
+
+# security suppport security mirror (no more updates)
+deb http://archive.debian.org/debian-security/ <%= lsbdistcodename %>/updates main contrib non-free
+
+# local packages
+#deb http://puppetmaster:81/ /
+
+# additional packages, see preferences
+#deb http://ftp.at.debian.org/debian sid main
+
+deb http://debian.koumbit.net/debian stable main

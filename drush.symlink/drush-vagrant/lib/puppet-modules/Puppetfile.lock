@@ -1,0 +1,18 @@
+GIT
+  remote: git://git.koumbit.net/puppet-apt.git
+  ref: master
+  sha: 9cbd01ed3e537e42773f85f1e6de8c2919ddea80
+  specs:
+    apt (0.0.1)
+
+GIT
+  remote: http://git.drupal.org/project/puppet-drush.git
+  ref: master
+  sha: 7132b516421e8c8035383ce39fdd786d752eb31a
+  specs:
+    drush (0.0.1)
+
+DEPENDENCIES
+  apt (>= 0)
+  drush (>= 0)
+

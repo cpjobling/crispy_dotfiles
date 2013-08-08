@@ -1,0 +1,27 @@
+# This file is brought to you by puppet
+
+# basic <%= lsbdistcodename %> archive
+<% if (lsbdistcodename == "lenny") -%>
+deb http://archive.debian.org/debian-archive/debian/ <%= lsbdistcodename %> main contrib non-free
+deb http://archive.debian.org/debian-security/ <%= lsbdistcodename %>/updates main contrib non-free
+<% else -%>
+deb http://debian.mirror.iweb.ca/debian/ <%= lsbdistcodename %> main contrib non-free
+<% end -%>
+# security suppport
+<% if (lsbdistcodename == "sid" || lsbdistcodename == "unstable" || lsbdistcodename == "lenny") -%>
+# There is no security updates for <%= lsbdistcodename %>
+<% else -%>
+deb http://security.debian.org/ <%= lsbdistcodename %>/updates main contrib non-free
+<% end -%>
+# local packages
+#deb http://puppetmaster:81/ /
+
+# follow testing, pinned in preferences
+deb http://debian.mirror.iweb.ca/debian testing main contrib non-free
+
+# additional packages, see preferences
+#deb http://ftp.at.debian.org/debian sid main
+
+deb http://debian.koumbit.net/debian stable main
+
+deb http://debian.alternc.org <%= lsbdistcodename %> main

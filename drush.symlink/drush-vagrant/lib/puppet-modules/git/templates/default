@@ -1,0 +1,4 @@
+# generate by puppet will be overwritten every 30min
+#
+# export all git repository
+DAEMON_OPTS="--user=git --pid-file=/var/run/git-daemon.pid --export-all --base-path=<%= real_projectroot %> --detach"
