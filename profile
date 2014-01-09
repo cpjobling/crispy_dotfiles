@@ -20,8 +20,8 @@ else
   start_agent;
 fi
 
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 alias md5='md5 -r'
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 alias md5sum='md5 -r'
 # source /sw/bin/init.sh
 
@@ -37,3 +37,7 @@ export JRUBY_OPTIONS="--1.9"
 
 # SM
 export PATH="${PATH}:/Users/eechris/.sm/bin:/Users/eechris/.sm/pkg/active/bin:/Users/eechris/.sm/pkg/active/sbin"
+
+# Added by Canopy installer on 2014-01-07
+# VIRTUAL_ENV_DISABLE_PROMPT can be set to '' to make bashprompt show that Canopy is active, otherwise 1
+VIRTUAL_ENV_DISABLE_PROMPT=1 source $HOME/Library/Enthought/Canopy_64bit/User/bin/activate

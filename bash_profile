@@ -30,3 +30,6 @@ export GOOS=darwin
 #export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+
+# added by Anaconda 1.8.0 installer
+export PATH="$HOME/anaconda/bin:$PATH"

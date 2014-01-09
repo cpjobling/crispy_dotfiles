@@ -46,9 +46,12 @@ export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 # BDSM 
 export PATH="${PATH}:/Users/eechris/.sm/bin:/Users/eechris/.sm/pkg/active/bin:/Users/eechris/.sm/pkg/active/sbin"
 
+# Anaconda
+export PATH=/Users/eechris/anaconda/bin:$PATH
+
 plugins=(git bundler brew gem eifion)
 
-
+export PATH="$HOME/anaconda/bin:$PATH"
 
 # recommended by brew doctor
 # eval "$(rbenv init -)"
